@@ -44,8 +44,9 @@ header > button {
 
 main {
     background: black url('./img/background.jpg') no-repeat center / cover;
-    height: 100vh;
+    min-height: 102vh;
     position: relative;
+    border-bottom: 8px solid #222222;
 }
 
 .container {
@@ -80,7 +81,6 @@ div.email {
 input {
     width: 500px;
     padding-left: 10px;
-
     border: 1px solid darkgray;
 }
 
@@ -95,4 +95,44 @@ input + button {
 
 input + button:hover {
     filter: brightness(120%);
+}
+
+section {
+    min-height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+h2 {
+    font-size: 3em;
+    text-align: center;
+    
+    margin-bottom: 40px;
+}
+
+.btn-question {
+    background-color: #303030;
+    width: 100%;
+    text-align: left;
+    padding: 25px;
+    font-size: 1.5em;
+    color: white;
+}
+
+button.btn-question > img {
+    float: right;
+    margin-top: 4px;
+}
+
+.answer {
+    margin-top: 1px;
+    background-color: #303030;
+    font-size: 1.5em;
+    padding: 30px 25px;
+    text-align: justify;
+}
+
+.answer > p:first-child  {
+    margin-bottom: 30px;
 }
