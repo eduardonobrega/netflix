@@ -120,9 +120,18 @@ h2 {
     color: white;
 }
 
-button.btn-question > img {
+.icon-most {
     float: right;
     margin-top: 4px;
+    transform: rotate(45deg);
+    transition: 0.2s;
+}
+
+.rotate {
+    float: right;
+    margin-top: 4px;
+    transform: translate(90deg);
+    transition: 0.2s;
 }
 
 .answer {
@@ -131,6 +140,7 @@ button.btn-question > img {
     font-size: 1.5em;
     padding: 30px 25px;
     text-align: justify;
+    display: none;
 }
 
 .answer > p:first-child  {
